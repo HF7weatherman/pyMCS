@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pymcs"
+authors = [
+    {name = "Henning Franke, MPI-M"},
+]
+dependencies = [
+    "cartopy",
+    "cmocean",
+    "h5py",
+    "matplotlib",
+    "netcdf4",
+    "numpy",
+    "pandas",
+    "seaborn",
+    "xarray",
+]
+description = "Tools to analyze the triggering of deep convection."
+requires-python = ">=3.10"
+license = {text = "BSD-3-Clause"}
+classifiers=[
+    "Private :: Do Not Upload",
+    "License :: OSI Approved :: BSD License",
+    "Programming Language :: Python :: 3.10"
+]
+dynamic = ["version"]
